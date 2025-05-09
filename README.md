@@ -46,9 +46,9 @@
 
 # Axel Classic
 
-Axel to motyw startowy używany przeze mnie jako baza do przygotowywania stron internetowych opartych na WordPress.
+Axel Classic to motyw startowy używany przeze mnie jako baza do przygotowywania stron internetowych opartych na WordPress. W odróżnieniu od motywu Axel zawiera dodatkowo pliki z podstawowymi stylami CSS.
 
-Jeśli chcesz się ze mną skontaktować w kwestiach stron internetowych, wejdź na moją stronę internetową [Reddog Systems](https://red-dog.pl) lub napisz pod adres [p.bachorek@red-dog.pl](p.bachorek@red-dog.pl).
+Jeśli chcesz się ze mną skontaktować w kwestiach stron internetowych, wejdź na moją stronę [Reddog Systems](https://red-dog.pl) lub napisz na adres [p.bachorek@red-dog.pl](p.bachorek@red-dog.pl).
 
 ## Organizacja katalogów
 
