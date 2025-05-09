@@ -1,0 +1,86 @@
+@use "../../base/variables" as *;
+@use "../../base/placeholders";
+
+/* Tytuł (.title) */
+
+.title {
+	color: $black;
+
+	.title:has( a ) {
+		font-size: 0;
+	}
+
+	a {
+		@extend %inverted-underline;
+		color: $black;
+		line-height: $line-height-sm;
+	}
+}
+
+// -----
+// Skróty wpisów
+.excerpt .title {
+	margin-block: $spacing-md;
+	
+	a { 
+		font-size: $font-size-lg;
+	}
+}
+
+@media screen and ( min-width:$breakpoint-md ) {
+	.excerpt .title a { font-size: $font-size-xl; }
+}
+
+// -----
+// Kategorie i archiwa
+body.archive h1.title,
+body.category h1.title {
+	font-size: $font-size-2xl;
+	line-height: $line-height-sm;
+	margin-block: 0 $spacing-3xl;
+	margin-inline: auto;
+	text-align: center;
+	width: min( 73rem, 100% );
+}
+
+// -----
+// Strony i wpisy
+body.page h1.title,
+body.single h1.title {
+	font-size: $font-size-2xl;
+	line-height: $line-height-sm;
+	text-align: center;
+}
+
+// -----
+// Strony
+body.page h1.title {
+	margin-block: 0 $spacing-3xl;
+}
+
+// -----
+// Wpisy
+body.single h1.title {
+	margin-block: 0 $spacing-md;
+}
+
+// -----
+// Wyniki wyszukiwania
+body.search-results h1.title {
+	text-align: center;
+}
+
+// -----
+// Błąd 404
+body.error404 .title {
+	text-align: center;
+}
+
+// -----
+// Tryb kontrastowy
+body.contrast-mode {
+	.title,
+	.title a {
+		color: $white;
+	}
+}

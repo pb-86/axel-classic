@@ -1,0 +1,34 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+@use "../../base/placeholders";
+
+.menu {
+	@extend %list-reset;
+	@include flex( $align:center, $gap:$spacing-lg );
+}
+
+.menu > .menu-item {
+	line-height: 1;
+	padding-block: $spacing-xl;
+}
+
+// Odnośniki pierwszego poziomu
+.menu > .menu-item > a {
+	@extend %inverted-underline;
+	color: $white;
+}
+
+// 
+.menu > .current-menu-item > a {
+	font-weight: $font-weight-bold;
+}
+
+// Element, który ma submenu.
+.menu > .menu-item-has-children {
+	position: relative;
+}
+
+// Wersja do druku
+@media print {
+	.menu { display: none; }
+}

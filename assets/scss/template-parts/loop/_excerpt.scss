@@ -1,0 +1,11 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+
+.excerpt {
+	margin-inline: auto;
+	width: min( 34rem, 100% );
+
+	&__meta {
+		@include flex( $gap:$spacing-sm );
+	}
+}

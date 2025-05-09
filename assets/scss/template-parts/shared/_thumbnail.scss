@@ -1,0 +1,26 @@
+@use "../../base/variables" as *;
+@use "../../base/placeholders";
+
+.thumbnail {
+	.thumbnail__image {
+		box-shadow: 0 0 3rem darken( $silver, 6.66% );
+	}
+
+	.thumbnail__caption {
+		@extend %figcaption;
+	}
+
+	// Obrazek wyróżniający we wpisach i na stronach
+	body.page &,
+	body.single & {
+		margin-block: $spacing-3xl;
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.thumbnail__image {
+		box-shadow: none;
+		filter: contrast(1.25);
+	}
+}

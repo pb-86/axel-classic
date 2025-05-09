@@ -1,0 +1,10 @@
+@use "../../base/variables" as *;
+
+.site-logo {
+	height: $spacing-4xl;
+	width: $spacing-4xl;
+
+	.site-logo__link {
+		font-size: 0;
+	}
+}

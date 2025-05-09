@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+@use "../base/placeholders";
+
+.sidebar {
+	padding-block: 0 $spacing-4xl;
+
+	section {
+		background-color: $silver;
+		border-radius: 0.5rem;
+		color: $black;
+		padding: $spacing-lg $spacing-xl;
+
+		h2 { line-height: 1; }
+		a { color: $black; }
+	}
+
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.sidebar {
+		background-color: $black;
+	}
+
+	.sidebar section {
+		background-color: $gray;
+		color: $white;
+	}
+
+	.sidebar section a {
+		color: $white;
+	}
+}

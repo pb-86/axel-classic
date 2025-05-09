@@ -1,0 +1,52 @@
+// Base
+@use "base/fonts";
+@use "base/reset";
+@use "base/helpers";
+@use "base/mixins";
+@use "base/placeholders";
+
+// Templates
+@use "templates/header";
+@use "templates/searchform";
+@use "templates/search";
+@use "templates/sidebar";
+@use "templates/footer";
+@use "templates/singular";
+
+// Template parts
+	//-- Header
+	@use "template-parts/header/screen-reader-text";
+	@use "template-parts/header/navbars";
+	@use "template-parts/header/hamburger";
+	@use "template-parts/header/menus";
+	@use "template-parts/header/submenus";
+	@use "template-parts/header/toggle-contrast";
+	@use "template-parts/header/site-logo";
+	@use "template-parts/header/site-name";
+
+	//-- Main
+	@use "template-parts/main/main";
+
+	//-- Loop
+	@use "template-parts/loop/excerpt";
+	@use "template-parts/loop/pagination";
+	@use "template-parts/loop/no-posts";
+
+	//-- Shared
+	@use "template-parts/shared/thumbnail";
+	@use "template-parts/shared/thumbnail-placeholder";
+	@use "template-parts/shared/author";
+	@use "template-parts/shared/date";
+	@use "template-parts/shared/title";
+	@use "template-parts/shared/content";
+	@use "template-parts/shared/back-to-home";
+	@use "template-parts/shared/comments";
+	@use "template-parts/shared/post-meta";
+	@use "template-parts/shared/print";
+
+	//-- Footer
+	@use "template-parts/footer/scroll-top-top";
+	@use "template-parts/footer/credits";
+
+// Blocks
+@use "blocks/blocks";

@@ -1,0 +1,21 @@
+{
+  "name": "axel-classic",
+  "version": "1.0.0",
+  "description": "- [Axel Classic](#axel-classic) \t- [Organizacja katalogów](#organizacja-katalogów) \t\t-\t[Katalog `assets`](#katalog-assets) \t\t- [Katalog `config`](#katalog-config) \t\t- [Katalog `templates`](#katalog-templates) \t\t- [Katalog `template-parts`](#katalog-template-parts) \t\t- [Szablony częściowe](#szablony-częściowe) \t- [Organizacja wspólnego kodu](#organizacja-wspólnego-kodu) \t\t- [Nagłówek](#nagłówek) \t\t\t- [Skip linki](#skip-linki) \t\t\t- [Hamburger](#hamburger) \t\t\t- [Górne menu](#górne-menu) \t\t\t- [Przełącznik trybu kontrastowego](#przełącznik-trybu-kontrastowego) \t\t\t- [Nazwa i opis strony](#nazwa-i-opis-strony) \t\t\t- [Formularz wyszukiwania](#formularz-wyszukiwania) \t\t- [Pętla ze skrótami wpisów](#pętla-ze-skrótami-wpisów) \t\t\t- [Skrót wpisu](#skrót-wpisu) \t\t\t\t- [Domyślny](#domyślny) \t\t\t\t- [W wynikach wyszukiwania](#w-wynikach-wyszukiwania) \t\t\t- [Paginacja](#paginacja) \t\t\t- [Informacja o braku wpisów](#informacja-o-braku-wpisów) \t\t- [Zasadnicza treść](#zasadnicza-treść) \t\t\t- [Tytuł strony z wpisami](#tytuł-strony-z-wpisami) \t\t\t- [Tytuł strony, wpisu lub kategorii](#tytuł-strony-wpisu-lub-kategorii) \t\t\t- [Tytuł z odnośnikiem](#tytuł-z-odnośnikiem) \t\t\t- [Data publikacji](#data-publikacji) \t\t\t- [Autor wpisu lub strony](#autor-wpisu-lub-strony) \t\t\t- [Obrazek wyróżniający](#obrazek-wyróżniający) \t\t\t- [Treść](#treść) \t\t\t- [Czytaj dalej](#czytaj-dalej) \t\t\t- [Wróć do strony głównej](#wróc-do-strony-głównej) \t\t\t- [Drukuj](#drukuj) \t\t- [Stopka](#stopka) \t\t\t- [Dolne menu](#dolne-menu) \t\t\t- [Wróć do góry](#wróć-do-góry) \t\t\t- [Oznaczenie autorstwa](#oznaczenie-autorstwa) \t- [Główne szablony](#główne-szablony) \t\t- [Lista wpisów](#lista-wpisów) \t\t- [Strona](#strona) \t\t- [Wpis](#wpis) \t\t- [Kategorie](#kategorie) \t\t- [Wyniki wyszukiwania](#wyniki-wyszukiwania) \t\t- [Błąd 404](#błąd-404)",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "archiver": "^7.0.1",
+    "browser-sync": "^3.0.4",
+    "fs": "^0.0.1-security",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "inquirer": "^12.6.0",
+    "path": "^0.12.7"
+  }
+}

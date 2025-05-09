@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.header {
+	background-color: $silver;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	& > .wrapper  {
+		@include flex( $align:center, $justify:center, $direction:column, $gap:0 );
+		height: 32rem;
+	}
+
+	&--has-background {
+		& > .wrapper {
+			background-color: rgba( $black, 0.5 );
+		}
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.header {
+		background-color: $gray;
+	}
+}
+
+// Wersja do druku
+@media print {
+	.header {
+		display: none;
+	}
+}

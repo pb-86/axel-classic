@@ -1,0 +1,27 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+@use "../../base/placeholders";
+
+.post-author {
+	@include flex( $align:center, $justify:center, $gap:$spacing-2xs );
+	color: $gray;
+	line-height: $line-height-md;
+
+	&::before {
+		@extend %icon;
+		background-image: url( $image-directory + "icon-person.svg" );
+	}
+
+	// Info o autorze we wpisach i na stronach
+	body.page &,
+	body.single & {
+		text-align: center;
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.post-author {
+		color: $white;
+	}
+}

@@ -1,0 +1,32 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+
+.navbar {
+	&--header,
+	&--footer {
+		background-color: $black;
+	}
+
+	&--header {
+		& > .wrapper {
+			@include flex( $align:center, $justify:space-between, $gap:$spacing-md );
+		}
+	}
+
+	&--footer {
+		& > .wrapper {
+			@include flex( $direction:column, $align:center, $justify:center, $gap:0 );
+
+			@media screen and ( min-width: $breakpoint-md ) {
+				@include flex( $direction:row, $align:center, $justify:space-between );
+			}
+		}
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.navbar--footer {
+		background-color: $gray;
+	}
+}

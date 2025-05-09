@@ -1,0 +1,24 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+@use "../../base/placeholders";
+
+.print {
+	@include flex( $align:center, $justify:center, $gap:0.25rem );
+	background-color: transparent;
+	border: none;
+	color: $gray;
+	font-family: $font-family;
+	font-size: $font-size-md;
+
+	&::before {
+		@extend %icon;
+		background-image: url( $image-directory + "icon-printer.svg" );
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.print {
+		color: $white;
+	}
+}

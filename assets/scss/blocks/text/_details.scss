@@ -1,0 +1,27 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+
+.wp-block-details {
+
+	// Konfiguracja
+	$summary-background-color: $silver;
+	$summary-border-radius: 0.375rem;
+	$summary-padding-vertical: 0;
+	$summary-padding-horizontal: 0;
+	$text-padding-left: 0;
+
+	// Style
+	margin-block: 0;
+
+	summary {
+		background-color: $summary-background-color;
+		border-radius: $summary-border-radius;
+		padding-block: $summary-padding-vertical;
+		padding-inline: $summary-padding-horizontal;
+	}
+
+	p {
+		padding-left: $text-padding-left;
+	}
+
+}

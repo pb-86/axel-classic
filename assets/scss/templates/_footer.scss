@@ -1,0 +1,27 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.footer {
+	& > .wrapper {
+		@include flex( $align:center, $justify:center );
+		padding-block: $spacing-xl;
+
+		@media screen and ( min-width:$breakpoint-md ) {
+			justify-content: flex-end;
+		}
+	}
+}
+
+// Wersja kontrastowa
+body.contrast-mode {
+	.footer {
+		background-color: $black;
+	}
+}
+
+// Wersja do druku
+@media print {
+	.footer {
+		display: none;
+	}
+}

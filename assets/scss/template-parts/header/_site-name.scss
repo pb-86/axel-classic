@@ -1,0 +1,56 @@
+@use "../../base/variables" as *;
+@use "../../base/placeholders";
+
+.site-name {
+	padding-inline: 0;
+	text-align: center;
+
+	.site-name__title {
+		font-size: 0;
+	}
+	
+	.site-name__link {
+		@extend %inverted-underline;
+		color: $black;
+		display: inline-block;
+		font-size: $font-size-2xl;
+		font-weight: $font-weight-bold;
+		letter-spacing: -$spacing-3xs;
+		line-height: 1;
+		margin-block: 0 $spacing-sm;
+
+		@media screen and ( min-width:$breakpoint-sm ) {
+			font-size: $font-size-3xl;
+		}
+	}
+
+	.site-name__description {
+		color: $black;
+		font-size: $font-size-md;
+		font-weight: $font-weight-regular;
+		line-height: $line-height-sm;
+
+		@media screen and ( min-width:$breakpoint-sm ) {
+			font-size: $font-size-xl;
+		}
+	}
+}
+
+// Jeśli jest obrazek w tle
+.header {
+	&.has-background {
+		.site-name__link,
+		.site-name__description {
+			color: $white;
+			text-shadow: 0 0 2rem $black;
+		}
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.site-name {
+		&__link { color: $white; }
+		&__description { color: $white; }
+	}
+}

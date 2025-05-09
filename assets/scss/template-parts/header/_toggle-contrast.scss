@@ -1,0 +1,49 @@
+@use '../../base/variables' as *;
+@use '../../base/mixins' as *;
+@use '../../base/placeholders';
+
+.toggle-contrast {
+	@include flex( $align:center, $gap:$spacing-xs );
+
+	&::before {
+		@extend %icon;
+		background-image: url( ../img/icon-contrast.svg );
+		height: 1.25rem;
+		width: 1.25rem;
+	}
+
+	.toggle-contrast__button {
+		@include flex( $align:center );
+		background-color: $white;
+		border: none;
+		border-radius: 1rem;
+		cursor: pointer;
+		height: 1.5rem;
+		padding: 0 $spacing-2xs;
+		position: relative;
+		width: 2.5rem;
+	}
+
+	.toggle-contrast__button--is-on {
+		background-color: $red;
+	}
+
+	.toggle-contrast__button--is-on .toggle-contrast__dot {
+		background-color: $white;
+		transform: translateX(16px);
+	}
+
+	.toggle-contrast__dot {
+		background-color: $black;
+		border-radius: 50%;
+		height: 1rem;
+		position: absolute;
+		width: 1rem;
+	}
+
+	.toggle-contrast__dot--is-animated {
+		transition-property: transform;
+		transition-duration: 0.33s;
+		transition-timing-function: ease-in-out;
+	}
+}

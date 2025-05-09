@@ -1,0 +1,53 @@
+// Ścieżki do katalogów
+$font-directory: "../font/";
+$image-directory: "../img/";
+
+// Kolory
+$black: hsl(225,   5%,  10%);
+$gray:  hsl(225,   5%,  30%);
+$silver:hsl(225,   5%,  90%);
+$red:   hsl(354,  65%,  63%);
+$yellow:hsl( 51,  65%,  55%);
+$white: hsl(  0,   0%, 100%);
+$blue:  hsl(225,  35%,  37%);
+
+// Typografia, kroje tekstu
+$font-family: "Familjen Grotesk", sans-serif;
+
+// Typografia, rozmiary tekstu
+$font-size-sm:  0.875rem;
+$font-size-md:  1rem;
+$font-size-lg:  1.125rem;
+$font-size-xl:  1.5rem;
+$font-size-2xl: 3rem;
+$font-size-3xl: 6rem;
+
+// Typografia, wagi tekstu
+$font-weight-regular:  400;
+$font-weight-medium:   500;
+$font-weight-semibold: 600;
+$font-weight-bold:     700;
+
+// Typografia, wysokość linii
+$line-height-xs: 1.125;
+$line-height-sm: 1.25;
+$line-height-md: 1.5;
+$line-height-lg: 2;
+
+// Odstępy
+$spacing-3xs: 0.125rem;
+$spacing-2xs: 0.25rem;
+$spacing-xs:  0.5rem;
+$spacing-sm:  0.75rem;
+$spacing-md:  1rem;
+$spacing-lg:  1.5rem;
+$spacing-xl:	2rem;
+$spacing-2xl: 2.5rem;
+$spacing-3xl: 4rem;
+$spacing-4xl: 6rem;
+
+// Responsywność
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;

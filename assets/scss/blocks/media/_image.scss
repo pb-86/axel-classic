@@ -1,0 +1,28 @@
+@use "../../base/variables" as *;
+@use "../../base/placeholders";
+
+.wp-block-image {
+	figure.alignleft {
+		float: left;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	figure.alignright {
+		float: right;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	figure.aligncenter {
+		margin-block: 0;
+
+		img {
+			margin-inline: auto;
+		}
+	}
+
+	figcaption {
+		@extend %figcaption;
+	}
+}

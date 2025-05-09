@@ -1,0 +1,29 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+
+.post-meta {
+	@include flex( $gap:0 $spacing-sm, $wrap:wrap );
+
+	&--on-top { margin-block: 0 $spacing-3xl; }
+	&--on-bottom { margin-block: $spacing-3xl 0; }
+
+	// Skrót wpisu.
+	.excerpt & {
+		margin-block: $spacing-md 0;
+	}
+
+	// Strona, wpis i błąd 404
+	body.page &,
+	body.single &,
+	body.error404 & {
+		justify-content: center;
+	}
+}
+
+
+// Wersja do druku
+@media print {
+	.post-meta {
+		display: none;
+	}
+}

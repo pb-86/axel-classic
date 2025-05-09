@@ -1,0 +1,59 @@
+@use "../../base/variables" as *;
+
+.content {
+	color: $black;
+
+	a { color: $black; }
+	
+	// Treść we wpisach i na stronach
+	body.page &,
+	body.single & {
+		margin-inline: auto;
+
+		& > :first-child { margin-top: 0; }
+		& > :last-child { margin-bottom: 0; }
+
+		& > span[id^="more-"] {
+			font-size: 0;
+		}
+
+		& > p {
+			font-size: $font-size-md;
+			margin-block: 0 $spacing-lg;
+			margin-inline: auto;
+			width: min( 48rem, 100% );
+			@media screen and ( min-width:$breakpoint-md ) {
+				font-size: $font-size-lg;
+				margin-block: 0 $spacing-xl;
+			}
+		}
+	}
+
+	// Błąd 404
+	body.error404 & {
+		text-align: center;
+	}
+
+	// Treść w skrótach wpisów
+	.excerpt & {
+		& > :first-child { margin-top: 0; }
+		& > :last-child { margin-bottom: 0; }
+
+		& > p {
+			font-size: $font-size-md;
+			margin-block: 0 $spacing-lg;
+
+			@media screen and ( min-width:$breakpoint-md ) {
+				font-size: $font-size-lg;
+				margin-block: 0 $spacing-xl;
+			}
+		}
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.content {
+		color: $white;
+	}
+}

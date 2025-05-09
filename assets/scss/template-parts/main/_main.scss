@@ -1,0 +1,24 @@
+@use "../../base/variables" as *;
+
+.main {
+	background-color: $white;
+	padding-block: $spacing-4xl;
+	
+	@media screen and ( min-width:$breakpoint-sm ) {
+		// margin-block: 0;
+	}
+}
+
+// Tryb kontrastowy {
+body.contrast-mode {
+	.main {
+		background-color: $black;
+	}
+}
+
+// Wersja do druku
+@media print {
+	.main {
+		margin-block: $spacing-3xl;
+	}
+}

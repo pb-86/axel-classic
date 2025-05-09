@@ -1,0 +1,52 @@
+@use "../../base/variables" as *;
+@use "../../base/mixins" as *;
+@use "../../base/placeholders";
+
+.sub-menu {
+	display: none;
+}
+
+.sub-menu > .menu-item > a {
+	@extend %inverted-underline;
+	color: $black;
+	white-space: nowrap;
+}
+
+.sub-menu--show {
+	@extend %list-reset;
+	@include flex( $direction:column, $gap:$spacing-xs );
+	background: $white;
+	border: 0.0625rem solid $black;
+	border-top: 0;
+	padding: $spacing-md;
+	position: absolute;
+	top: calc( $font-size-md + 2 * $spacing-xl );
+}
+
+// .sub-menu {
+// 	background-color: $white;
+// 	border: 0.0625rem solid $black;
+// 	display: none;
+// 	padding: 0;
+// 	position: absolute;
+// 	text-align: left;
+// 	white-space: nowrap;
+// 	z-index: 9999;
+
+// 	bottom: -$spacing-xl;
+
+// 	&--show {
+// 		display: block !important;
+// 	}
+
+// 	.menu-item {
+// 		display: block;
+// 		padding: 0;
+		
+// 		a {
+// 			color: $black;
+// 			margin: 0;
+// 		}
+// 	}	
+// }
+

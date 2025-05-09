@@ -1,0 +1,19 @@
+@use "../../base/variables" as *;
+@use "../../base/placeholders";
+
+.credits {
+	.credits__link {
+		@extend %inverted-underline;
+		color: $black;
+		line-height: 1;
+	}
+}
+
+// Tryb kontrastowy
+body.contrast-mode {
+	.credits {
+		.credits__link {
+			color: $white;
+		}
+	}
+}

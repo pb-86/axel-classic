@@ -1,0 +1,47 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+@use "../base/placeholders";
+
+// Lista helperów:
+//   1. Wrapper
+//   2. Button
+
+
+//---
+// 1. Wrapper
+.wrapper {
+	margin-inline: auto;
+	max-width: 73rem;
+	padding-inline: $spacing-lg;
+	width: 100%;
+
+	&.is-small {
+		max-width: 45rem;
+	}
+
+	&--excerpts {
+		@include flex( $direction:column, $gap:$spacing-3xl );
+
+		@media screen and ( min-width:$breakpoint-xl ) {
+			@include grid( $columns:repeat(2, 1fr), $gap:$spacing-3xl $spacing-2xl );
+		}
+	}
+
+	&--search {
+		@include grid( $columns:repeat(2, 1fr), $gap:$spacing-3xl $spacing-2xl );
+	}
+
+	&--widgets {
+		@include grid( $columns:1fr, $gap:$spacing-md );
+
+		@media screen and ( min-width:$breakpoint-md ) {
+			@include grid( $columns:repeat(2, 1fr), $gap:$spacing-md );
+		}
+	}
+}
+
+//---
+// 2. Button
+.button {
+	@include button();
+}
